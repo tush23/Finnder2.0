@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/news_header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/r_img_hight"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        app:riv_corner_radius="10dp"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/news_heading"
+            android:layout_width="340dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/product_sans"
+            android:text="@string/heading"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/heading_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvsource"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/product_sans"
+                android:gravity="center|fill_vertical"
+                android:text="@string/home"
+                android:textColor="@color/black"
+                android:textFontWeight="0"
+                android:textSize="9sp"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:background="@drawable/textviewbg"
+                android:text="@string/date_time"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="9sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/product_sans"
+                android:gravity="center_horizontal|center_vertical"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <include layout="@layout/gdline" />
+
+    </LinearLayout>
+</LinearLayout>

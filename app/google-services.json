@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "726798896246",
+    "firebase_url": "https://finnder-9a0ff.firebaseio.com",
+    "project_id": "finnder-9a0ff",
+    "storage_bucket": "finnder-9a0ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726798896246:android:b6fdb983912e690c",
+        "android_client_info": {
+          "package_name": "com.example.findnerds.finderagain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726798896246-d1m3m0oqbsjilp0c9omcc2mii0megpu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findnerds.finderagain",
+            "certificate_hash": "74bcd9177120610d19ce808de87722444fec2683"
+          }
+        },
+        {
+          "client_id": "726798896246-l6acbm9u3342ckios098mh0vckb50d6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findnerds.finderagain",
+            "certificate_hash": "e0c59d8d32d27db22acca2d3fdb7dca7501bbab7"
+          }
+        },
+        {
+          "client_id": "726798896246-9r6uk4krjp85cd6932gbad5u4hu1g32i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUqm4N13j6gNXw0dRngndl3h1w7yhZtlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726798896246-9r6uk4krjp85cd6932gbad5u4hu1g32i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726798896246:android:c5f8c4e2cb1291e8",
+        "android_client_info": {
+          "package_name": "com.example.findnerds.finnder_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726798896246-qv717npdlcddintod9p84sljhadnmnvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findnerds.finnder_2",
+            "certificate_hash": "e0c59d8d32d27db22acca2d3fdb7dca7501bbab7"
+          }
+        },
+        {
+          "client_id": "726798896246-9r6uk4krjp85cd6932gbad5u4hu1g32i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUqm4N13j6gNXw0dRngndl3h1w7yhZtlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726798896246-9r6uk4krjp85cd6932gbad5u4hu1g32i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726798896246:android:cdff3fe5d267d1fd",
+        "android_client_info": {
+          "package_name": "com.example.nerdtech_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726798896246-5f822sk5t2v4gjuavbf57huel3slv8ea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nerdtech_2",
+            "certificate_hash": "74bcd9177120610d19ce808de87722444fec2683"
+          }
+        },
+        {
+          "client_id": "726798896246-9r6uk4krjp85cd6932gbad5u4hu1g32i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUqm4N13j6gNXw0dRngndl3h1w7yhZtlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726798896246-9r6uk4krjp85cd6932gbad5u4hu1g32i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

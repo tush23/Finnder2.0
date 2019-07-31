@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/myid1"
+        layout="@layout/bottom_bar_header" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/product_sans"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/drawer_button_padding"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading_text_size"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="@dimen/btn_corner_radius"
+        app:rippleColor="@color/white"
+        android:focusable="true" />
+
+    <View android:layout_width="380dp"
+        android:layout_height="0.9dp"
+        android:background="@color/gdcolor"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/taskBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/product_sans"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/drawer_button_padding"
+        android:text="@string/daily_goals"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading_text_size"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="@dimen/btn_corner_radius"
+        app:rippleColor="@color/white" />
+
+    <View android:layout_width="380dp"
+        android:layout_height="0.9dp"
+        android:background="@color/gdcolor"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/product_sans"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/drawer_button_padding"
+        android:text="More"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading_text_size"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="@dimen/btn_corner_radius"
+        app:rippleColor="@color/white"
+        android:focusable="true" />
+
+
+
+
+</LinearLayout>
+

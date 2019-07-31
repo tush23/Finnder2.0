@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">FinnderAgain</string>
+
+    <!-- OnBoard Screen. -->
+
+
+    <string name="get_started">Get Started</string>
+
+    <string name="intro_title_1">Welcome to Finnder</string>
+    <string name="intro_title_2">Find your goals</string>
+    <string name="intro_title_3">*****************</string>
+    <string name="intro_desc_1">An app for nerds that helps you find the updates in Tech World.</string>
+    <string name="intro_desc_2">The app will help you to find your goals and way to achieve them.</string>
+    <string name="intro_desc_3"></string>
+    <string name="bottom_line">News app for Nerds</string>
+    <string name="app_n">FINNDER</string>
+    <string name="nav1_clicked">Item-1,</string>
+    <string name="nav2_clicked">Item-2</string>
+    <string name="nav3_clicked">Item-3</string>
+    <string name="heading">Heading</string>
+    <string name="signout">SignOut</string>
+    <string name="daily_goals">Tasks</string>
+    <string name="home">Home</string>
+    <string name="tush">Tushar</string>
+    <string name="date_time">date time</string>
+
+    <string-array name="SourceId">
+        <item>techcrunch</item>
+        <item>the-next-web</item>
+        <item>wired</item>
+        <item>engadget</item>
+        <item>the-verge</item>
+        <item>ars-technica</item>
+        <item>hacker-news</item>
+        <item>recode</item>
+        <item>google-news-in</item>
+        <item>google-news</item>
+        <item>ign</item>
+
+    </string-array>
+    <string-array name="SourceName">
+        <item>Windowscentral.com</item>
+        <item>Ndtv.com</item>
+        <item>Gamespot.com</item>
+        <item>Pcworld.com</item>
+        <item>Phonearena.com</item>
+        <item>Techtimes.com</item>
+        <item>Macrumors.com</item>
+        <item>Hindustantimes.com</item>
+
+    </string-array>
+</resources>
