@@ -1,4 +1,4 @@
-package com.example.findnerds.finderagain.NewsData.news
+package com.example.findnerds.finderagain.NewsData.NewsUI
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -9,8 +9,7 @@ import java.util.*
 interface NewsServices {
 
     @GET("top-headlines")
-    fun getTopHeadlines(@Query("pageSize") pageSize:Int,
-                        @Query("country") country: String,
+    fun getTopHeadlines(@Query("country") country: String,
                         @Query("category") category: String,
                         @Query("apikey") apikey: String): retrofit2.Call<NewsResponse>
     @GET("everything")

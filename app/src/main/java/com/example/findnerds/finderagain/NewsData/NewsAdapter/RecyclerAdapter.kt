@@ -23,17 +23,16 @@ class RecyclerAdapter(var context:Context, var data: NewsResponse) : RecyclerVie
     }
 
     override fun onBindViewHolder(recyclerHolder: RecyclerHolder, position: Int) {
-        recyclerHolder.newsHeadingText.text = data.articles[position].title
-        recyclerHolder.newsSource.text = data.articles[position].source.name
-        if (data.articles[position].urlToImage!!.isNotEmpty()) {
-            Picasso.get()
-                   .load(data.articles[position]
-                   .urlToImage)
-                   .into(recyclerHolder.newsImage)
-        }
-        recyclerHolder.itemView.setOnClickListener {
-            Toast.makeText(context,data.articles[position].title,Toast.LENGTH_SHORT).show()
+            recyclerHolder.newsHeadingText.text = data.articles[position].title
+            recyclerHolder.newsSource.text = data.articles[position].source.name
+            if (data.articles[position].urlToImage!!.isNotEmpty()) {
+                Picasso.get()
+                        .load(data.articles[position]
+                                .urlToImage)
+                        .into(recyclerHolder.newsImage)
+            }
+            recyclerHolder.itemView.setOnClickListener {
+                Toast.makeText(context, data.articles[position].title, Toast.LENGTH_SHORT).show()
+            }
         }
     }
-
-}

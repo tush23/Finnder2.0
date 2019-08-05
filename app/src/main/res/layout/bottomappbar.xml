@@ -21,7 +21,7 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="55dp"
-            app:backgroundTint="@color/black"
+            app:backgroundTint="@color/appbarcolor"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:src="@drawable/baseline_search_white_18"

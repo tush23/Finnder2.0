@@ -1,4 +1,4 @@
-package com.example.findnerds.finderagain.NewsData.news
+package com.example.findnerds.finderagain.NewsData.NewsUI
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -44,9 +44,9 @@ class NewsFragment : Fragment() {
         val rView = view.findViewById<RecyclerView>(R.id.fragment_recycler)
         val manager = LinearLayoutManager(this.requireActivity())
         rView.layoutManager= manager
-        viewModel!!.newsArticleObservable.observe(this, Observer { articles->
+        viewModel!!.newsSearchedObservable.observe(this, Observer { articles->
             rView.adapter = RecyclerAdapter(this.activity!!, articles)
-            dataArt=articles
+            dataArt =articles
         })
         //rView.adapter = RecyclerAdapter(this.activity!!,dataArt!!)
 

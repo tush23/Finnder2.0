@@ -1,4 +1,4 @@
-package com.example.findnerds.finderagain.NewsData.news
+package com.example.findnerds.finderagain.NewsData.NewsUI
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

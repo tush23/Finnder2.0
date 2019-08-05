@@ -5,7 +5,7 @@
     android:id="@+id/news"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".NewsData.news.NewsFragment"
+    tools:context=".NewsData.NewsUI.NewsFragment"
     android:orientation="vertical">
 
 

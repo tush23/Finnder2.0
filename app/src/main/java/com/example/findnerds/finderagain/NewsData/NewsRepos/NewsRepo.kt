@@ -24,10 +24,10 @@ public class NewsRepo{
     }
 
 
-    fun getTopArticles(pageSize:Int,country:String,category:String):LiveData<NewsResponse>{
+    fun getTopArticles(country:String,category:String):LiveData<NewsResponse>{
         val data = MutableLiveData<NewsResponse>()
         val service = NetworkInstance.retrofitInstance.create(NewsServices::class.java)
-        val call = service.getTopHeadlines(pageSize,country, category, NetworkInstance.API_KEY)
+        val call = service.getTopHeadlines(country, category, NetworkInstance.API_KEY)
         call.enqueue(object : Callback<NewsResponse> {
 
             override fun onResponse(call: Call<NewsResponse>?, response: Response<NewsResponse>?) {

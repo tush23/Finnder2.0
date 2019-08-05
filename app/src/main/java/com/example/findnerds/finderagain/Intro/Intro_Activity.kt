@@ -9,7 +9,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
-import com.example.findnerds.finderagain.NewsData.news.NewsActivity
+import com.example.findnerds.finderagain.NewsData.NewsUI.NewsActivity
 import com.example.findnerds.finderagain.R
 import kotlinx.android.synthetic.main.activity_intro.*
 import java.util.*

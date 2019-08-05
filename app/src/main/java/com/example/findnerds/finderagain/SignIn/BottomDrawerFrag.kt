@@ -9,7 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.findnerds.finderagain.NewsData.news.FragTru
+import com.example.findnerds.finderagain.NewsData.NewsUI.FragTru
 import com.example.findnerds.finderagain.R
 import com.example.findnerds.finnder_2.ui.SignIn.Users
 import com.google.android.gms.auth.api.Auth
