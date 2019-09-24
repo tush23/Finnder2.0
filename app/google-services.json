@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "726798896246-t0f665p2d47ec4jnrlahqkmfg7udtdto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findnerds.finderagain",
+            "certificate_hash": "d0ee7916a4005679b4d5dd35e6c4f937697d074d"
+          }
+        },
+        {
           "client_id": "726798896246-d1m3m0oqbsjilp0c9omcc2mii0megpu8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

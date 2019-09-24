@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -36,7 +37,7 @@ class BottomDrawerFrag: BottomSheetDialogFragment(){
 
 
     override fun getTheme(): Int = R.style.BottomSheetDialogTheme
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog = BottomSheetDialog(requireContext(), theme)
+    override fun onCreateDialog(savedInstanceState: Bundle?): BottomSheetDialog = BottomSheetDialog(requireContext(), theme)
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -64,7 +65,7 @@ class BottomDrawerFrag: BottomSheetDialogFragment(){
             signOut()
         }
         taskBtn.setOnClickListener{
-            context!!.toast("Workingngngn")
+            context!!.toast("Tasks")
         }
             //make the button always in clicked state
             /*fragBtn.setOnTouchListener { v, event ->
@@ -73,12 +74,15 @@ class BottomDrawerFrag: BottomSheetDialogFragment(){
             }
 */
             Home_btn.setOnClickListener {
-                val fragtry = FragTru.newInstance()
+                /*val fragtry = FragTru.newInstance()
                 val transaction = activity!!.supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.container, fragtry)
-                transaction.commit()
-                Toast.makeText(context,"WotkingDD",Toast.LENGTH_SHORT).show()
+                transaction.commit()*/
+                Toast.makeText(context,"Home",Toast.LENGTH_SHORT).show()
             }
+        more.setOnClickListener{
+            context!!.toast("More")
+        }
         }
     override fun onPause() {
         super.onPause()
@@ -128,6 +132,7 @@ class BottomDrawerFrag: BottomSheetDialogFragment(){
     fun signIn() {
         val signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleSignClient)
         startActivityForResult(signInIntent, RC_Sign_IN)
+        Log.d("Tag","1212 SignIN")
     }
 
 
@@ -140,6 +145,7 @@ class BottomDrawerFrag: BottomSheetDialogFragment(){
             try {
                 // Google Sign In was successful, authenticate with Firebase
                 val account = task.getResult(ApiException::class.java)
+                Log.d("Tag","1212 onActivityResult")
                 firebaseAuthWithGoogle(account)
             } catch (e: ApiException) {
                 // Google Sign In failed, update UI appropriately
@@ -162,7 +168,10 @@ class BottomDrawerFrag: BottomSheetDialogFragment(){
 
                         //startActivity(Intent(this,SignOut::class.java))
                         updateUI(user!!)
+                        Log.d("Tag","User"+user.displayName)
                     } else {
+                        Log.d("Tag","User_Failed")
+
                         // If sign in fails, display a message to the user.
                         //Log.w(FragmentActivity.TAG, "signInWithCredential:failure", task.exception)
                         // S.make(findViewById(R.id.main_layout), "Authentication Failed.", Snackbar.LENGTH_SHORT).show()

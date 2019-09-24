@@ -12,9 +12,9 @@
         android:id="@+id/news_header_img"
         android:layout_width="match_parent"
         android:layout_height="@dimen/r_img_hight"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:background="@android:drawable/screen_background_light_transparent"
         android:scaleType="fitXY"
@@ -33,12 +33,13 @@
 
         <TextView
             android:id="@+id/news_heading"
-            android:layout_width="340dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/product_sans"
             android:text="@string/heading"
-            android:textAlignment="textStart"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
             android:textColor="@color/white"
             android:textSize="@dimen/heading_text_size" />
 

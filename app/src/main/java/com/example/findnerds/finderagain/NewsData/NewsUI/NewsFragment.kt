@@ -44,7 +44,7 @@ class NewsFragment : Fragment() {
         val rView = view.findViewById<RecyclerView>(R.id.fragment_recycler)
         val manager = LinearLayoutManager(this.requireActivity())
         rView.layoutManager= manager
-        viewModel!!.newsSearchedObservable.observe(this, Observer { articles->
+        viewModel!!.newsArticleObservable.observe(this, Observer { articles->
             rView.adapter = RecyclerAdapter(this.activity!!, articles)
             dataArt =articles
         })
